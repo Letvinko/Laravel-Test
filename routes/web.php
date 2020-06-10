@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/',function(){
+  return view('content.aboard');
+});
 Route::get('/login', 'userloginController@index');
 Route::get('/register', 'userRegistController@index');
 Route::post('/register','userRegistController@register');
