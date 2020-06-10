@@ -31,4 +31,9 @@ class userPageController extends Controller
       return redirect('/dashboard');
     }
 
+    public function logout(){
+      Session::flush();
+      return redirect('/login');
+    }
+
 }

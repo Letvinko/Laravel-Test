@@ -9,7 +9,7 @@
     <title>Welcome to Dashboard</title>
   </head>
   <body>
-    @include('shared.header')
+    @include('shared.headerLogout')
     <hr>
     <h1 style="text-align:center;">Welcome To Dashboard</h1>
     <center>

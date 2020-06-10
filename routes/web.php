@@ -21,3 +21,4 @@ Route::get('/dashboard','userPageController@SHowUser');
 Route::get('/Delete','userPageController@Delete');
 Route::get('/edit','userEditcontroller@updatePage');
 Route::post('/edit','userEditcontroller@updateData');
+Route::get('/logout','userPageController@logout');
