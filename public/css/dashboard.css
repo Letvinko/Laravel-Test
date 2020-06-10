@@ -1,0 +1,17 @@
+input{
+  width:20%;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;
+  text-align:center;
+}
+
+#judul{
+  text-align: center;
+}
+
+#submitan button , #submitan a {  
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+}

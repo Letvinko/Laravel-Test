@@ -1,0 +1,22 @@
+#judul{
+  text-align: center;  
+}
+
+.container{
+  margin: 10% auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  width:20%;
+}
+
+#login-items{
+  justify-content: center;
+  display: block;
+}
+
+#bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 4%;
+}

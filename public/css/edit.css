@@ -1,0 +1,9 @@
+#edit input , #edit button{
+  display: block;
+  justify-content: center;
+  margin: auto auto;
+}
+
+a , h1{
+  text-align: center;
+}
