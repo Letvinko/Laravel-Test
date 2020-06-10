@@ -26,6 +26,9 @@
               <button type="submit" name="button">Submit</button>
             </div>
           </form>
+          @if(Session::has('message'))
+            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+          @endif
         </center>
       </div>
     <hr>

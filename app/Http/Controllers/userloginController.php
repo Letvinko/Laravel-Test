@@ -20,11 +20,20 @@ class userloginController extends Controller
         'password' => 'required'
       ]);
       $users = userModel::where('username',$request->username)->first();
-      if($request->password == $users->password){
-        Session::put('id', $users->id);
-        return redirect('/dashboard');
+      if($users){
+          if($request->password == $users->password){
+            Session::put('id', $users->id);
+            return redirect('/dashboard');
+          }else{
+            Session::flash('message', 'Password Salah');
+            Session::flash('alert-class', 'alert-danger');
+            return redirect('/login');
+        }
       }else{
-        dd('404 NOT FOUND');
+        Session::flash('message', 'Username Salah');
+        Session::flash('alert-class', 'alert-danger');
+        return redirect('/login');
       }
+
     }
 }
